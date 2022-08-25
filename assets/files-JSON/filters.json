@@ -1,0 +1,134 @@
+[{
+    "id": "1",
+    "categoryName": "Régime alimentaire",
+    "filtres": [
+        {
+            "name": "Hallal",
+            "selected": false
+        },
+        {
+            "name": "Veggie",
+            "selected": false
+        },
+        {
+            "name": "Casher",
+            "selected": false
+        }
+    ]
+  }, {
+    "id": "2",
+    "categoryName": "Allergènes",
+    "filtres": [
+        {
+            "name": "Gluten",
+            "selected": false
+        },
+        {
+            "name": "Crustacés",
+            "selected": false
+        },
+        {
+            "name": "Oeufs",
+            "selected": false
+        },
+        {
+            "name": "Arachides",
+            "selected": false
+        },
+        {
+            "name": "Lait",
+            "selected": false
+        },
+        {
+            "name": "Céréales",
+            "selected": false
+        }
+    ]
+  }, {
+    "id": "3",
+    "categoryName": "Moyens de paiement",
+    "filtres": [
+        {
+            "name": "Espèces",
+            "selected": false
+        },
+        {
+            "name": "Chèques",
+            "selected": false
+        },
+        {
+            "name": "Sans contact",
+            "selected": false
+        },
+        {
+            "name": "CB",
+            "selected": false
+        },
+        {
+            "name": "Visa",
+            "selected": false
+        },
+        {
+            "name": "MasterCard",
+            "selected": false
+        },
+        {
+            "name": "Ticket Restaurant",
+            "selected": false
+        },
+        {
+            "name": "Chèques déjeuner",
+            "selected": false
+        },
+        {
+            "name": "Chèques vacances",
+            "selected": false
+        }
+    ]
+  }, {
+    "id": "4",
+    "categoryName": "Équipements",
+    "filtres": [
+        {
+            "name": "WiFi",
+            "selected": false
+        },
+        {
+            "name": "Climatisation",
+            "selected": false
+        },
+        {
+            "name": "Terrasse ombragée",
+            "selected": false
+        },
+        {
+            "name": "Chaise haute",
+            "selected": false
+        },
+        {
+            "name": "Prise électrique",
+            "selected": false
+        }
+    ]
+  },{
+    "id": "5",
+    "categoryName": "Accessibilité",
+    "filtres": [
+        {
+            "name": "Handicap",
+            "selected": false
+        },
+        {
+            "name": "Animaux",
+            "selected": false
+        },
+        {
+            "name": "Parking gratuit",
+            "selected": false
+        },
+        {
+            "name": "Transports en commun",
+            "selected": false
+        }
+    ]
+  }]
