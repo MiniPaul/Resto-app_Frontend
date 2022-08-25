@@ -9,7 +9,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 function Authentification(props) {
   // let privateAdressIP = "172.20.10.8"; // Laurent
-  let privateAdressIP = "172.20.10.4"; // Pauline
+  // let privateAdressIP = "172.20.10.4"; // Pauline
   // let privateAdressIP = "192.168.1.14"; // Johann
 
   // Overlays Visibility
@@ -70,7 +70,7 @@ function Authentification(props) {
   // Connection with BackEnd to create a User in BDD
   var signup = async () => {
     // 1. Add new user in database using route from back end
-    const saveUser = await fetch("http://" + privateAdressIP + ":3000/signup", {
+    const saveUser = await fetch("https://resto-lacapsule.herokuapp.com/signup" /*"http://" + privateAdressIP + ":3000/signup"*/, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: `firstNameFromFront=${signupFirstName}&nameFromFront=${signupLastName}&emailFromFront=${signupEmail}&passwordFromFront=${signupPassword}&phoneFromFront=${signupTel}`,
@@ -102,8 +102,7 @@ function Authentification(props) {
   var checkConnectionInformation = async () => {
     try {
       // 1. On envoie les infos du user pour le connecter
-      var connectionInfos = await fetch(
-        "http://" + privateAdressIP + ":3000/sign-in",
+      var connectionInfos = await fetch("https://resto-lacapsule.herokuapp.com/sign-in" /*"http://" + privateAdressIP + ":3000/sign-in"*/,
         {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -137,7 +136,7 @@ function Authentification(props) {
 
   // Connexion avec le BackEnd pour modifier le MDP du User en BDD
   var resetPassword = async () => {
-    const dataResetPassword = await fetch("/reset-password", {
+    const dataResetPassword = await fetch("https://resto-lacapsule.herokuapp.com/reset-password", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: `emailFromResetPassword=${emailReset}&passwordFromResetPassword=${passwordReset}&passwordFromResetPasswordConfirmed=${confirmedPasswordReset}`,

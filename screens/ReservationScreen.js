@@ -80,13 +80,13 @@ function ReservationScreen(props) {
 
 //// SAVE RESERVATION IN BDD
   // let privateAdressIP = "172.20.10.8"; // Laurent
-  let privateAdressIP = "172.20.10.4"; // Pauline
+  // let privateAdressIP = "172.20.10.4"; // Pauline
   // let privateAdressIP = "192.168.1.14"; // Johann
 
   // Connection with BackEnd to create a User in BDD
   var saveReservation = async () => {
       // Add new reservation in database using route from back end
-      const saveResa = await fetch("http://"+ privateAdressIP +":3000/reservation", {
+      const saveResa = await fetch("https://resto-lacapsule.herokuapp.com/reservation" /* "http://"+ privateAdressIP +":3000/reservation" */, {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: `restoName=${props.restoSelected[0].name}&restoAddress=${props.restoSelected[0].address}&restoZIPCode=${props.restoSelected[0].ZIPcode}&restoCity=${props.restoSelected[0].city}&restoPhone=${props.restoSelected[0].phoneNumber}&date=${date}&hour=${hour}&numberOfPeople=${counterAdults+counterChildren+counterBabies}&resaName=${name}&resaPhone=${parseInt(phone)}&status=${'En attente...'}&tokenFromRedux=${props.userConnected.userFromBDD.token}`,
