@@ -79,10 +79,6 @@ function ReservationScreen(props) {
   }
 
 //// SAVE RESERVATION IN BDD
-  // let privateAdressIP = "172.20.10.8"; // Laurent
-  // let privateAdressIP = "172.20.10.4"; // Pauline
-  // let privateAdressIP = "192.168.1.14"; // Johann
-
   // Connection with BackEnd to create a User in BDD
   var saveReservation = async () => {
       // Add new reservation in database using route from back end
