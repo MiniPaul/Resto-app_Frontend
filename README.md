@@ -1,7 +1,7 @@
 
 # Restô
 
-Final project of Web Dev training @La Capsule. Whether you're a vegetarian, a flexitarian or you only eat hallal meat or maybe you have gluten intolerance, it might be difficult for you to find the right restaurant. Restô is here to help you reserve the right place according to your preferences.
+Final project of Web Dev training @La Capsule.<br/><br/>Whether you're a vegetarian, a flexitarian or you only eat hallal meat or maybe you have gluten intolerance, it might be difficult for you to find the right restaurant. Restô is here to help you reserve the right place according to your preferences.
 
 ## Screenshots
 
